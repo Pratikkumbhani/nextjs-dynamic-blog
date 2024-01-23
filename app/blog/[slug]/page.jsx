@@ -15,7 +15,7 @@ async function getData(params) {
 export const generateMetadata = async ({ params: { slug } }) => {
   const data = await getData(slug);
   return {
-    title: slug,
+    title: data?.[0]?.yoast_head_json?.title || 'Blog Detail Page Title',
     description: data?.[0]?.yoast_head_json?.description || 'Blog Detail Page',
   };
 };
