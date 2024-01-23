@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import moment from "moment";
-import React from "react";
+import moment from 'moment';
+import React from 'react';
 
 const BlogPage = ({ data }) => {
   return (
@@ -15,7 +15,7 @@ const BlogPage = ({ data }) => {
             />
 
             <div className="mt-2">
-              Author:{" "}
+              Author:{' '}
               <span className="font-semibold">
                 {data?.yoast_head_json?.author}
               </span>
@@ -24,9 +24,9 @@ const BlogPage = ({ data }) => {
             <div className="mt-2">
               <div className="ml-auto">
                 <span className="text-sm text-gray-600">
-                  Posted:{" "}
+                  Posted:{' '}
                   <span className="font-semibold">
-                    {moment(data.date).format("MMMM Do YYYY")}
+                    {moment(data.date).format('MMMM Do YYYY')}
                   </span>
                 </span>
               </div>
